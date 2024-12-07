@@ -16,17 +16,17 @@ def declaratie():
         return render_template("declaratie_rbc.html", submitted_data=data)
     return render_template("declaratie_rbc.html", submitted_data=None)
 
-@app.route("/shutdown", methods=["POST"])
-def shutdown():
-    #Oprește serverul
-     os.kill(os.getpid(), signal.SIGTERM)
-     return "Server stopped."
+# @app.route("/shutdown", methods=["POST"])
+# def shutdown():
+#     #Oprește serverul
+#      os.kill(os.getpid(), signal.SIGTERM)
+#      return "Server stopped."
 
 def open_browser():
     webbrowser.open("http://127.0.0.1:5000/")
 
 if __name__ == "__main__":
     Timer(1, open_browser).start()
-    app.run(debug=False) # se pune True cand rulezi in python iar false ca executabil
+    app.run(debug=True) # se pune True cand rulezi in python iar false ca executabil
 
 

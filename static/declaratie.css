@@ -14,11 +14,13 @@ body {
 
 .a4 {
     width: 210mm;
-    /*height: 297mm; */
-    padding: 15mm;
+    /*height: 297mm;*/
+    padding: 10mm;
     white-space: normal;
+    margin-left: auto;
+    margin-right: auto;
     /* padding: 0; */
-    margin: 0 auto 10px ;
+    /*margin: 0 auto 10px ;
     /*margin: 0; */
     box-sizing: border-box;
     background-color: white;
@@ -59,6 +61,7 @@ body {
         background: white;
         margin: 0;
         padding: 0;
+
     }
     .a4 {
         box-shadow: none;
@@ -70,6 +73,16 @@ body {
     /* Ascunde butoanele la imprimare */
     button, #salveaza_pdf, #imprima {
         display: none !important;
+    }
+    input[type="text"] {
+        heigh: 40px;
+        line-height: 40px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
     }
 }
 
@@ -107,6 +120,9 @@ button:hover {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
+    /*margin-top: 600px;
+    width: 100%*/
+
 }
 
 /* Stiluri pentru semnături */
@@ -117,7 +133,8 @@ button:hover {
 }
 
 .semnatura_beneficiar, .semnatura_tehnician {
-    text-align: center;
+    text-align: left;
+
 }
 
 
