@@ -22,7 +22,7 @@
 </head>
 <body>
     <div id="document">
-        <div class="a4">
+        <div class="a4" style="page-break-after: always;">
             <h1>DECLARAȚIE DE INSTALARE</h1>
                 <p class="subtitle">a aparatelor electronice de marcat fiscale</p>
 
@@ -42,7 +42,7 @@
                         <input type="text" name="eliberat_de" style="width: 150px;" required> la data de
                         <input type="date" name="data_eliberarii" style="width: 100px;" required>, în calitate de reprezentant la
                         <input type="text" name="reprezentant_la" style="width: 200px;" required>, cu sediul în:
-                        <input type="text" name="sediu" style="width: 350px;"required>, declar că am instalat la data de
+                        <input type="text" name="sediu" style="width: 350px;" required>, declar că am instalat la data de
                         <input type="date" name="data_instalarii" style="width: 100px;" required>, la punctul de lucru din
                         <input type="text" name="adresa" style="width: 400px;" required>, un număr de
                         <input type="number" name="numar_amef" style="width: 40px;" required> aparat/aparate de marcat electronic fiscal, având elementele de identificare conform ANEXA.
@@ -57,13 +57,13 @@
                     </p>
                     <p>
                         Sigilarea imprimantei s-a efectuat cu sigiliul
-                        <input type="text" name="sigiliu" style="width: 50px;"required>, aplicat pe memoria fiscală a imprimantei cât și pe carcasa acesteia.
+                        <input type="text" name="sigiliu" style="width: 50px;" required>, aplicat pe memoria fiscală a imprimantei cât și pe carcasa acesteia.
                     </p>
                     <p>
                         Instalarea a fost efectuată de tehnicianul:
                         <input type="text" name="tehnician" style="width: 200px;" required>, având legitimația nr.
-                        <input type="text" name="legitimatie" style="width: 40px;"required> cu numărul de identificare
-                        <input type="text" name="sigiliu" style="width: 50px;"required> de la unitatea service SC SECRET DATA SRL, SATU MARE, strada AVRAM IANCU nr. 17, cod fiscal: RO 9740584 telefon: 0261-768.038
+                        <input type="text" name="legitimatie" style="width: 40px;" required> cu numărul de identificare
+                        <input type="text" name="sigiliu" style="width: 50px;" required> de la unitatea service SC SECRET DATA SRL, SATU MARE, strada AVRAM IANCU nr. 17, cod fiscal: RO 9740584 telefon: 0261-768.038
                     </p>
                     <div class="semnaturi_container">
                         <div class="semnatura_beneficiar">
@@ -77,15 +77,30 @@
                             ........................................<br>
                         </div>
                     </div>
+                </form>
         </div>
-        <div class="a4">
+            <div class="a4" style="page-break-after: always;">
                     <p class="subtitle2" style="text-align: left;"> - ANEXA - </p>
-                    <p class="alineare-flex">
+                    <p class="alineare-flex"> </p>
+
+                        <div class="field-group" style="display: inline-block; margin-right: 10px; margin-left -20px">
+                            <label for="left-input" style="font-size: 18px; font-weight: bold">Nr. Crt. <br> </label>
+                            <input type="text" id="left-input" name="left-input" style="width: 20px; text-align: center; font-size: 18px; margin-top: 12px;" required>
+                            <br>
+                            <input type="text" id="left-input2" name="left-input" style="width: 20px; text-align: center; font-size: 18px;" required>
+                            <br>
+                            <input type="text" id="left-input3" name="left-input" style="width: 20px; text-align: center; font-size: 18px;" required>
+                            <br>
+                            <input type="text" id="left-input4" name="left-input" style="width: 20px; text-align: center; font-size: 18px;" required>
+                            <br>
+                            <input type="text" id="left-input5" name="left-input" style="width: 20px; text-align: center; font-size: 18px;" required>
+
+                        </div>
                         <div class="field-group" style="display: inline-block; margin-right: 10px;">
-                            <label for="serie_amef" style="font-size: 18px; font-weight: bold; " >Serie AMEF: <br> </label>
+                            <label for="serie_amef" style="font-size: 18px; font-weight: bold; " >Serie AMEF <br> </label>
                             <input type="text" id="serie_amef" name="serie_amef" style="width: 180px; text-align: center; font-size: 18px; margin-top: 12px;" required>
                             <!--- <textarea id="serie_amef" name="serie_amef" style="width: 180px; height: 40px; font-weight: bold; text-align: justify; font-size: 18px;" required></textarea>
-                              textarea face casuta imput dinamica , se poate modifica marimea casutei-->
+                              textarea face casuta input dinamica , se poate modifica marimea casutei-->
                             <br>
                              <input type="text" id="serie_amef2" name="serie_amef" style="width: 180px; text-align: center; font-size: 18px" required>
                             <br>
@@ -97,7 +112,7 @@
                         </div>
 
                         <div class="field-group" style="display: inline-block; margin-right: 10px; ">
-                            <label for="model_amef" style="font-size: 18px; font-weight: bold;">Model: <br></label>
+                            <label for="model_amef" style="font-size: 18px; font-weight: bold;">Model <br></label>
                             <input type="text" id="model_amef" name="model_amef" style="width: 180px;  text-align: center; font-size: 18px; margin-top: 12px;" required>
                             <br>
                             <input type="text" id="model_amef2" name="model_amef" style="width: 180px; text-align: center; font-size: 18px" required>
@@ -109,7 +124,7 @@
                             <input type="text" id="model_amef5" name="model_amef" style="width: 180px; text-align: center; font-size: 18px" required>
                         </div>
                         <div class="field-group" style="display: inline-block;">
-                            <label for="serie_fiscala" style="font-size: 18px; font-weight: bold;">Serie fiscală: <br></label>
+                            <label for="serie_fiscala" style="font-size: 18px; font-weight: bold;">Serie fiscală <br></label>
                             <input type="text" id="serie_fiscala" name="serie_fiscala" style="width: 180px; text-align: center; font-size: 18px; margin-top: 12px;" required>
                             <br>
                             <input type="text" id="serie_fiscala2" name="serie_fiscala" style="width: 180px; text-align: center; font-size: 18px" required>
@@ -121,7 +136,6 @@
                             <input type="text" id="serie_fiscala5" name="serie_fiscala" style="width: 180px; text-align: center; font-size: 18px" required>
 
                         </div>
-                    </p>
 
 
             <div class="semnaturi_container_pag2">
@@ -139,7 +153,6 @@
 
                     <button type="button" id="salveaza_pdf">Salvează PDF</button>
                     <button type="button" id="imprima">Imprimă</button>
-                </form>
 
             <script>
             document.addEventListener("DOMContentLoaded", function () {
@@ -161,12 +174,21 @@
                     hideButtons();
                     const element = document.getElementById("document");
                     const opt = {
-                        margin: [0, 0, 0, 0],
-                        filename: 'declaratie_instalare_rbc.pdf',
-                        image: { type: 'jpeg', quality: 1 },
-                        html2canvas: { scale: 4 },
-                        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-                    };
+                    margin: 0,
+                    filename: 'declaratie_instalare_rbc.pdf',
+                    image: { type: 'jpeg', quality: 1 },
+                    html2canvas: {
+                        scale: 4,
+                        useCORS: true
+                    },
+                    jsPDF: {
+                        unit: 'mm',
+                        format: 'a4',
+                        orientation: 'portrait'
+                    },
+                    pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+                };
+
                     html2pdf().from(element).set(opt).save().then(function () {
                         showButtons();
                     });
@@ -181,7 +203,6 @@
                 });
             });
             </script>
-
         </div>
         <script>
         window.addEventListener("beforeunload", function () {

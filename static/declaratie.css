@@ -14,9 +14,11 @@ body {
 
 .a4 {
     width: 210mm;
+    /*height: 297mm; */
     padding: 15mm;
+    white-space: normal;
     /* padding: 0; */
-    margin: 0 auto 10px;
+    margin: 0 auto 10px ;
     /*margin: 0; */
     box-sizing: border-box;
     background-color: white;
@@ -25,6 +27,10 @@ body {
     /* page-break-inside: avoid; */
     page-break-inside: auto; /* Permite împărțirea paginilor */
     /*background-color: #fffbe6; /* Fundal galben pentru verificare */
+}
+
+.a4:last-child {
+    page-break-after: auto;
 }
 
 .fiscal_info {
